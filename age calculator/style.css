@@ -1,0 +1,91 @@
+
+body{
+    background-color: rgba(200, 19, 34, 0.513);
+   height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.age{
+  height: 400px;
+  background-image: linear-gradient( to top, rgb(29, 21, 21), rgba(233, 216, 216, 0.705) );
+  width: 400px;
+  box-shadow: 10px 10px  rgb(111, 111, 112), 16px 16px rgb(64, 66, 64) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 5px;
+}
+button{
+  background-color: black;
+  color: aliceblue;
+  font-size: 1rem;
+  border: 2px solid whitesmoke;
+  font-weight: 500;
+}
+button:hover{
+  background-color: rgb(245, 130, 110); 
+  color: black;
+  font-weight: 700;
+  cursor: pointer;
+}
+input{
+  background-color: black;
+  color: aliceblue;
+  font-size: 1rem;
+  padding-left: 20px;
+  width: 90pt;
+  border: 2px solid rgba(255, 255, 255, 0.674);
+  border-radius: 20px;
+  padding: 3px 5px 5px 15px;
+}
+input:hover{
+  color: black;
+  background-color: cadetblue;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width:750px){
+  .age{
+    width: 350px;
+    height: 200px;
+  }
+  body{
+    font-size: 50%;
+    background-color: rgba(167, 211, 79, 0.749);
+  }
+  input{
+    padding: 8px 0 8px 8;
+    
+  }
+  label{
+    color: rgba(0, 0, 0, 0.657);
+    font-weight: 600 ;
+  }
+}
+
+
+@media (max-width:400px){
+  .age{
+    width: 300px;
+    height: 200px;
+  }
+  body{
+    font-size: 50%;
+    background-color: rgb(201, 139, 47);
+  }
+}
+@media (max-width:300px){
+  .age{
+    width: 200px;
+    height: 100px;
+  }
+  body{
+    font-size: 50%;
+  }
+}
+
